@@ -1,4 +1,3 @@
-(* keep_hierarchy = "yes", dont_touch = "true" *)
 
 module biases_rom_depthwise_pointwise_2 (
     input wire [5:0] addr, 
