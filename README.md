@@ -11,7 +11,7 @@ Our FPGA-based accelerator overcomes these limitations with an energy-efficient,
 
 🔸 Processor Platform
 
-RISC-V VEGA Core (AT1051): 32-bit in-order processor for configuration, control, and result retrieval.
+RISC-V VEGA Core : 32-bit in-order processor for configuration, control, and result retrieval.
 
 AXI4-Lite & AXI4-Full Interfaces for seamless integration between control and high-throughput data paths.
 
@@ -56,12 +56,6 @@ Classes (9 Total):
 Center, Donut, Edge-Loc, Edge-Ring, Loc, Near-Full, Random, Scratch, None
 
 Accuracy: ~91.7% (INT8, close to FP32)
-
-Inference Latency: 161 ms per 224×224 image
-
-Throughput: 6.21 FPS
-
-Speedup: 8.68× vs. software implementation
 
 ⚙️ Functional Specifications
 
