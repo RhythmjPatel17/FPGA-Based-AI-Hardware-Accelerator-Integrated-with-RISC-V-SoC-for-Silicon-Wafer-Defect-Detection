@@ -1,0 +1,1 @@
+# FPGA-Based-AI-Hardware-Accelerator-Integrated-with-RISC-V-SoC-for-Silicon-Wafer-Defect-Detection
