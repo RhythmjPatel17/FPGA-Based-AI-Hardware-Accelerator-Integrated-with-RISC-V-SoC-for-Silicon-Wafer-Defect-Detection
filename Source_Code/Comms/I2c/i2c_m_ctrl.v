@@ -1,50 +1,9 @@
-//   ==================================================================
-//   >>>>>>>>>>>>>>>>>>>>>>> COPYRIGHT NOTICE <<<<<<<<<<<<<<<<<<<<<<<<<
-//   ------------------------------------------------------------------
-//   Copyright (c) 2014 by Lattice Semiconductor Corporation
-//   ALL RIGHTS RESERVED 
-//   ------------------------------------------------------------------
-//
-//   Permission:
-//
-//      Lattice SG Pte. Ltd. grants permission to use this code
-//      pursuant to the terms of the Lattice Reference Design License Agreement. 
-//
-//
-//   Disclaimer:
-//
-//      This VHDL or Verilog source code is intended as a design reference
-//      which illustrates how these types of functions can be implemented.
-//      It is the user's responsibility to verify their design for
-//      consistency and functionality through the use of formal
-//      verification methods.  Lattice provides no warranty
-//      regarding the use or functionality of this code.
-//
-//   --------------------------------------------------------------------
-//
-//                  Lattice SG Pte. Ltd.
-//                  101 Thomson Road, United Square #07-02 
-//                  Singapore 307591
-//
-//
-//                  TEL: 1-800-Lattice (USA and Canada)
-//                       +65-6631-2000 (Singapore)
-//                       +1-503-268-8001 (other locations)
-//
-//                  web: http://www.latticesemi.com/
-//                  email: techsupport@latticesemi.com
-//
-//   --------------------------------------------------------------------
+
 `timescale 1 ns / 1 ps
 
 ///// Only supports I2C write transaction /////
 
-module i2c_m_ctrl # (
-	parameter [ 3:0]	BYTE_COUNT   =  4'd3  ,	// number of bytes per transaction (3 for IMX258)
-	parameter [ 9:0]	NUM_OF_TRANS = 10'd80 ,	// number of write transactions,
-	parameter [ 7:0]	STOP_COUNT   =  8'd35 ,	// ~ half ccyle of SCL
-	parameter [ 7:0]	GAP_COUNT    =  8'd200 	// GAP time between two transactions in sys_clk_i cycles
-) (
+module i2c_m_ctrl  (
 	input			rst_n_i,
 	input			sys_clk_i,		// assuming 27 MHz for 37ns glitch filtering
 	input			scl_stretch_i,	// SCL stertch state indicator
@@ -246,4 +205,5 @@ rom_hm_0360_cam_out rom_hm_0360_cam_out_inst
 );
 
 endmodule
+
 
