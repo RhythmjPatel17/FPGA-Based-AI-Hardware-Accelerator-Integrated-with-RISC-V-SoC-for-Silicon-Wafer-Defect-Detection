@@ -1,4 +1,3 @@
-(* keep_hierarchy = "yes", dont_touch = "true" *)
 
 module weights_rom_1 (
     input wire [9:0] addr, 
